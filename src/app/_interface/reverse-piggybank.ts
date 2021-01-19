@@ -1,0 +1,3 @@
+export interface ReversePiggybank {
+  balance;
+}

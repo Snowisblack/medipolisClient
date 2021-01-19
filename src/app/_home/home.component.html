@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>
+    MAIN MENU
+  </h1>
+  <div id="info">
+    Hello {{user.username}}!<br>
+    Your balance is: {{user.reversePiggybank.balance}}€
+  </div>
+  <div id="penalty">
+    <br>
+    Want to give a penalty to another user? <br>
+    <select id="allUser" name="User">
+      <option class="element" *ngFor="let u of allUser" [value]="u.username">{{u.username}}</option>
+    </select>
+    <select id="penalties">
+      <option class="element" *ngFor="let p of penalties" [value]="p.name">{{p.name}} ({{p.value}}€)</option>
+    </select>
+    <button id="btnSubmitPen" (click)="submitPen()"> Submit </button>
+  </div>
+  <div>
+    <button id="clearMyBalance" (click)="clearBalance()">
+      Clear Balance
+    </button>
+  </div>
+  <button id="logout" (click)="logout()">
+      Logout
+  </button>
+</div>

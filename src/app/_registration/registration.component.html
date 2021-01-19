@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>  REGISTRATION  </h1>
+  <form [formGroup]="form">
+    <div class="form-field">
+      <label></label>
+      <input class="input-field" name="input-field" formControlName="username" placeholder="Username" />
+    </div>
+    <div class="form-field">
+      <label></label>
+      <input class="input-field" name="input-field" formControlName="password" type="password" placeholder="Password" />
+    </div>
+    <div class="form-field">
+      <label></label>
+      <input class="input-field" name="input-field" formControlName="passwordConfirm" type="password" placeholder="Confirm Password" />
+    </div>
+  </form>
+  <button id="btnRegister"  (click)="register()"> Register </button>
+  <button id="btnRegister"  (click)="goToLogin()"> Go to Login </button>
+  <div id='wrong-text'>
+
+  </div>
+
+</div>
